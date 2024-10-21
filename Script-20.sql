@@ -1,11 +1,18 @@
-CREATE TABLE tb_user(
-	id NUMBER PRIMARY KEY, 
-	pw varchar2(50), 
-	name varchar2(50), 
-	birth date, 
-	create_date date
-);
+SELECT * FROM TB_CATEGORY tc ;
 
+
+CREATE TABLE tb_user(
+    id NUMBER PRIMARY KEY,
+    user_id varchar2(50) NOT null, 
+    user_pw varchar2(50) NOT null, 
+    name varchar2(50), 
+    birth date, 
+    create_date date
+);
+SELECT * FROM tb_game;
+
+
+DROP TABLE tb_user;
 CREATE TABLE tb_game(
 	id NUMBER NOT NULL,
 	name varchar2(200),
